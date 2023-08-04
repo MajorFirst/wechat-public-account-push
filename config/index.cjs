@@ -23,7 +23,7 @@ const USER_CONFIG = {
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oO0D-6hihE-YVtXeyO_2ZC2qea2I',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'WpQDuzELP9t0DQflhRMJiNCWijHV7SYXpfR4_ykwnhQ',
+      useTemplateId: 'TRw5H_6XgFKmAVJZlWPmd9QJTsPtWwr_yBNyki7u1YA',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '03-10',
       festivals: [
@@ -65,9 +65,6 @@ const USER_CONFIG = {
       ]
     },
   ],
-  /** 是否给文字设置多彩颜色, 和emoji不兼容 */
-  // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
-  IS_SHOW_COLOR: true,
 
   /** 每日一言 */
   // 每日一言的内容类型
