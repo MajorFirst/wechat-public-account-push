@@ -33,12 +33,13 @@ const USER_CONFIG = {
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
-          type: '生日', name: '宝贝', year: '2000', date: '03-10',
+          type: '生日', name: 'syh', year: '2000', date: '03-10',
         },
         {
           type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
         },
       ],
+      FESTIVALS_LIMIT: 3,
       // 我们在一起已经有xxxx天了的配置
       customizedDateList: [
         // 在一起的日子
@@ -46,8 +47,72 @@ const USER_CONFIG = {
         // 结婚纪念日
         { keyword: 'marry_day', date: '2022-09-09' },
       ],
+      slotList: [
+        // 这样配置的话，就会每次发送这句话
+        { keyword: 'encourage_oneself', contents: '你主要的问题在于读书太少而想得太多' },
+        // 这样配置的话，就会每次随机选一句话发送
+        {
+          keyword: 'lover_prattle',
+          contents: [
+            '因为太喜欢你，所以看谁都像是情敌。',
+            '申请成为你爱里的永久居民。',
+            '你很傻，你很笨，可我还是很羡慕你，因为你有我',
+            '遇见你，就好像捡到了100斤的运气'
+          ],
+        }
+        // 你可以不断按格式往下增加
+        // ...
+      ]
     },
   ],
+  /** 是否给文字设置多彩颜色, 和emoji不兼容 */
+  // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
+  IS_SHOW_COLOR: true,
+
+  /** 每日一言 */
+  // 每日一言的内容类型
+  // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
+  LITERARY_PREFERENCE: '',
+  SWITCH: {
+    /** 每日天气 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    weather: true,
+
+    /** 节假日 */
+    // 下一休息日综合提醒, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    holidaytts: true,
+
+    /** 每日N句 */
+    // 金山每日一句, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    CIBA: true,
+
+    // 每日一言, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    oneTalk: true,
+
+    // 土味情话(彩虹屁), 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    earthyLoveWords: true,
+
+    // 朋友圈文案, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    momentCopyrighting: true,
+
+    // 毒鸡汤, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    poisonChickenSoup: true,
+
+    // 古诗古文, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    poetry: true,
+
+    /** 星座运势 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    horoscope: true,
+
+    /** 生日消息和节日消息 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    birthdayMessage: true,
+
+    /** 学生课表 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    courseSchedule: true,
+  },
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
