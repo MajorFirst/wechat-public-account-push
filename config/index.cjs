@@ -15,16 +15,15 @@ const USER_CONFIG = {
 
   PROVINCE: '成都',
   CITY: '四川',
-  to_name: '小仙女',
 
   USERS: [
     {
       // 想要发送的人的名字
-      name: '宝贝',
+      name: '小仙女',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oO0D-6hihE-YVtXeyO_2ZC2qea2I',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'z_iLdBhk9dnhEPhhrG3QYlJKCgSq4Dg1n_mjjGq8DLQ',
+      useTemplateId: 'AwGe3Q_m_iUYkw6oeUCLA1GieUWlehk0JK4AqouwSvM',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '03-10',
       festivals: [
@@ -67,11 +66,11 @@ const USER_CONFIG = {
     },
     {
       // 想要发送的人的名字
-      name: '宝贝',
+      name: '小仙女',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oO0D-6hihE-YVtXeyO_2ZC2qea2I',//todo
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'TRw5H_6XgFKmAVJZlWPmd9QJTsPtWwr_yBNyki7u1YA',
+      useTemplateId: 'Fvn69qDa_FjG6xg5o1V1eMKMVQ7zDR8oExtC7F-QGig',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '03-10',
       festivals: [
@@ -167,7 +166,7 @@ const USER_CONFIG = {
     {
       name: '自己',
       // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
+      id: 'oO0D-6hihE-YVtXeyO_2ZC2qea2I',
     }
   ],
 
